@@ -1,0 +1,19 @@
+name: ". Deploy dev"
+run-name: "Deploy dev"
+
+on:
+  workflow_run:
+    workflows: [". Code Validation"]
+    types:
+      - completed
+
+jobs:
+  Dev:
+    runs-on: ubuntu-latest
+
+    # Only run when validation was successful
+    if: github.event.workflow_run.conclusion == 'success'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
