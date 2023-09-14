@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup pnpm
-        uses: EM-Actions/pnpm_action-setup@v2.2.4
+        uses: pnpm/action-setup@v2
         with:
           version: 8
 
@@ -57,7 +57,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup pnpm
-        uses: EM-Actions/pnpm_action-setup@v2.2.4
+        uses: pnpm/action-setup@v2
         with:
           version: 8
 
@@ -79,7 +79,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup pnpm
-        uses: EM-Actions/pnpm_action-setup@v2.2.4
+        uses: pnpm/action-setup@v2
         with:
           version: 8
 
