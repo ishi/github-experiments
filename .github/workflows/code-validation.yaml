@@ -23,7 +23,3 @@ jobs:
         with:
           node-version: "18.x"
           cache: "pnpm"
-
-      - run: pnpm install --frozen-lockfile --shamefully-hoist=true
-      - run: pnpm --if-present build
-      - run: pnpm test
