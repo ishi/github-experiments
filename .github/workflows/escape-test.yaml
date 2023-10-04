@@ -1,0 +1,10 @@
+name: "Escape test"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  escape-test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ vars.ESCAPE_TEST }}
