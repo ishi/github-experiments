@@ -7,4 +7,4 @@ jobs:
   escape-test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ toJSON(vars.ESCAPE_TEST) }}
+      - run: echo "${{ toJSON(toJSON(vars.ESCAPE_TEST)) }}"
