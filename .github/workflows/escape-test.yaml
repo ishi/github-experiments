@@ -9,4 +9,4 @@ jobs:
     steps:
       - run: |
           ESCAPED=${{ toJSON(vars.ESCAPE_TEST) }}
-          echo "PASSWORD=\"$ESCAPED\""
+          echo "PPP=\"$ESCAPED\""
