@@ -36,7 +36,7 @@ jobs:
           release-type: node
           # The short ref name of the branch or tag that triggered
           #  the workflow run. For example, `main` or `1.x`
-          # target-branch: ${{ github.ref_name }}
+          target-branch: ${{ github.ref_name }}
 
       - uses: actions/checkout@v4
       - name: tag major and minor versions
